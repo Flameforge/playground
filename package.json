@@ -1,7 +1,37 @@
 {
-  "name": "playground",
+  "name": "meow-playground",
   "version": "0.1.0",
+  "description": "A little sandbox to play with new technologies and general problems",
+  "keywords": [
+    "React",
+    "JSX",
+    "ES6",
+    "TypeScript",
+    "Flow",
+    "Git"
+  ],
+  "homepage": "PUBLISH ME!!!",
+  "bugs": {
+    "url": "https://github.com/Flameforge/playground/issues",
+    "email": "flameforge@gmail.com"
+  },
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Bruno Palma",
+      "email": "flameforge@gmail.com",
+      "url": "https://github.com/flameforge"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flameforge/playground"
+  },
   "private": false,
+  "engines": {
+    "node": ">=16.6.1 <17",
+    "npm": ">=7.20.5 <8"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -10,6 +40,10 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -20,13 +54,34 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "eslint",
+      "prettier --write"
+    ]
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
     ]
+  },
+  "prettier": {
+    "options": {
+      "semi": true,
+      "trailingComma": "all",
+      "singleQuote": true,
+      "printWidth": 120,
+      "tabWidth": 2
+    }
   },
   "browserslist": {
     "production": [
@@ -39,5 +94,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^4.29.1",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0"
   }
 }
