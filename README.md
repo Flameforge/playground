@@ -19,3 +19,9 @@ A little sandbox to play with new technologies and general problems.
 * Configured SASS pre-compile in webpack.
 * Added prettier for beautiness.
 * Set with an MIT Licence.
+
+## Toys
+
+* Matrix Rain
+* Nyan cat animated favicon (not for Safari)
+* CSS only cat animation
