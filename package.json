@@ -34,7 +34,7 @@
     "test": "react-scripts test --testPathIgnorePatterns=src/vendor --env=jsdom",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "eject": "react-scripts eject",
-    "sort-package-json": "npx sort-package-json"
+    "sort": "npx sort-package-json"
   },
   "husky": {
     "hooks": {

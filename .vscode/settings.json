@@ -6,5 +6,5 @@
     "enable": true
   },
   "eslint.alwaysShowStatus": true,
-  "cSpell.words": ["TTFB", "browserslist", "testid"]
+  "cSpell.words": ["TTFB", "beautiness", "browserslist", "testid"]
 }
