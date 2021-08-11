@@ -60,11 +60,13 @@ var stripCount = vw / 10,
   dY = [],
   stripFontSize = [];
 
+const fontSize = (vw) => Math.floor(Math.random() * 32) + vw / 120;
+
 for (var i = 0; i < stripCount; i++) {
   stripX[i] = Math.floor(Math.random() * vw);
   stripY[i] = -100;
   dY[i] = Math.floor(Math.random() * 7) + 3;
-  stripFontSize[i] = Math.floor(Math.random() * 32) + vh / 100;
+  stripFontSize[i] = fontSize(vw);
 }
 
 // var theColors = ["#fff", "#81ec72", "#5cd646", "#54d13c", "#4ccc32", "#43c728"];
@@ -125,7 +127,7 @@ function draw() {
       stripX[j] = Math.floor(Math.random() * canvas.width);
       stripY[j] = -100;
       dY[j] = Math.floor(Math.random() * 7) + 3;
-      stripFontSize[i] = Math.floor(Math.random() * 32) + vh / 100;
+      stripFontSize[i] = fontSize(vw);
       drawStrip(stripX[j], stripY[j]);
     } else drawStrip(stripX[j], stripY[j]);
 

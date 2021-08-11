@@ -1,5 +1,12 @@
 @use "src/styles/colors";
 
+#hero-unit {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 $size: 170px; // (Fully responsive)
 
 // Cat
@@ -15,7 +22,8 @@ $size: 170px; // (Fully responsive)
   top: -30%;
   height: 60%;
   width: 25%;
-  background: colors.$white;
+  background: #bc8f8f;
+  // background: colors.$red;
 
   // Ear hair
   &::before,
@@ -210,12 +218,3 @@ $size: 170px; // (Fully responsive)
   transform: translateX(-50%);
   border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
 }
-
-// /* General page styling */
-// html {
-//   height: 100%;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   background: colors.$black;
-// }

@@ -61,7 +61,7 @@
   },
   "prettier": {
     "options": {
-      "semi": true,
+      "semi": false,
       "trailingComma": "all",
       "singleQuote": true,
       "printWidth": 120,
@@ -76,7 +76,8 @@
     "rules": {
       "prettier/prettier": [
         "warn"
-      ]
+      ],
+      "semi": "off"
     }
   },
   "dependencies": {
