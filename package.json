@@ -1,6 +1,7 @@
 {
   "name": "meow-playground",
   "version": "0.1.0",
+  "private": false,
   "description": "A little sandbox to play with new technologies and general problems",
   "keywords": [
     "React",
@@ -15,6 +16,10 @@
     "url": "https://github.com/Flameforge/playground/issues",
     "email": "flameforge@gmail.com"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Flameforge/playground"
+  },
   "license": "MIT",
   "contributors": [
     {
@@ -23,40 +28,13 @@
       "url": "https://github.com/flameforge"
     }
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Flameforge/playground"
-  },
-  "private": false,
-  "engines": {
-    "node": ">=16.6.1 <17",
-    "npm": ">=7.20.5 <8"
-  },
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@typescript-eslint/eslint-plugin": "^4.29.1",
-    "husky": "^7.0.1",
-    "lint-staged": "^11.1.2",
-    "prettier": "^2.3.2",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "sass": "^1.37.5",
-    "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --testPathIgnorePatterns=src/vendor --env=jsdom",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sort-package-json": "npx sort-package-json"
   },
   "husky": {
     "hooks": {
@@ -68,26 +46,6 @@
       "eslint",
       "prettier --write"
     ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:@typescript-eslint/recommended",
-      "plugin:prettier/recommended"
-    ],
-    "rules": {
-      "prettier/prettier": [
-        "warn"
-      ]
-    }
-  },
-  "prettier": {
-    "options": {
-      "semi": true,
-      "trailingComma": "all",
-      "singleQuote": true,
-      "printWidth": 120,
-      "tabWidth": 2
-    }
   },
   "browserslist": {
     "production": [
@@ -101,11 +59,56 @@
       "last 1 safari version"
     ]
   },
+  "prettier": {
+    "options": {
+      "semi": true,
+      "trailingComma": "all",
+      "singleQuote": true,
+      "printWidth": 120,
+      "tabWidth": 2
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "warn"
+      ]
+    }
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
   "devDependencies": {
+    "@testing-library/dom": "^8.1.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.0",
+    "@types/node": "^16.4.13",
+    "@types/react": "^17.0.16",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.29.1",
     "@typescript-eslint/parser": "^4.29.1",
+    "canvas": "^2.8.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "generate-react-cli": "^7.0.4"
+    "generate-react-cli": "^7.0.4",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.2",
+    "prettier": "^2.3.2",
+    "react-scripts": "4.0.3",
+    "sass": "^1.37.5",
+    "typescript": "^4.3.5",
+    "web-vitals": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=16.6.1 <17",
+    "npm": ">=7.20.5 <8"
   }
 }
