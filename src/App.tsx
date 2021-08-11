@@ -1,18 +1,23 @@
 import React from "react";
 import "./App.scss";
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+
 import Favicon from "react-favicon";
 import nyan from "./vendor/nyan";
 
-import Hero from "./components/Hero/Hero";
-import Matrix from "./components/Matrix/Matrix";
-
 const App: React.FunctionComponent = (): JSX.Element => {
   return (
-    <main className="App">
+    <main className="App" data-testid="App">
       <Favicon url={nyan} />
-      <Matrix />
-      <Hero />
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </main>
   );
 };
