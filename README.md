@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-![cat pic](http://placekitten.com/200/300)
+![cat pic](https://placekitten.com/200/300)
 
 ## Scripts
 
