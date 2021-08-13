@@ -1,21 +1,12 @@
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-const startRaining = () => {
-  /* eslint-disable @typescript-eslint/no-unused-vars */
-  var canvas = document
-      .getElementById("matrix-placeholder")
-      .appendChild(document.createElement("canvas")),
-    context = canvas.getContext("2d");
+// TODO: Randomize word sizes
+window.stopMatrix = false;
+const startRaining = (vw, vh) => {
+  const canvas = document.getElementById("matrix");
+  if (!canvas) return;
+
+  var context = canvas.getContext("2d");
   context.globalCompositeOperation = "lighter";
-
-  const vw = Math.max(
-    document.documentElement.clientWidth || 0,
-    window.innerWidth || 0
-  );
-
-  const vh = Math.max(
-    document.documentElement.clientHeight || 0,
-    window.innerHeight || 0
-  );
 
   canvas.width = vw;
   canvas.height = vh;
@@ -57,7 +48,7 @@ const startRaining = () => {
     "ﾍ",
   ];
 
-  var stripCount = vw / 10,
+  var stripCount = vw / 12,
     stripX = [],
     stripY = [],
     dY = [],
@@ -82,10 +73,8 @@ const startRaining = () => {
     "#16400d",
   ];
 
-  var elem, context, timer;
-
-  function drawStrip(x, y) {
-    for (var k = 0; k <= 20; k++) {
+  function drawStrip(x, y, wordLength = 20) {
+    for (var k = 0; k <= wordLength; k++) {
       var randChar = textStrip[Math.floor(Math.random() * textStrip.length)];
       if (context.fillText) {
         switch (k) {
@@ -136,7 +125,8 @@ const startRaining = () => {
 
       stripY[j] += dY[j];
     }
-    setTimeout(draw, 50);
+    let stop = window.stopMatrix;
+    if (!stop) setTimeout(draw, 50);
   }
   return;
 };

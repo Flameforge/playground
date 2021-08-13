@@ -4,6 +4,11 @@ import { Omit } from "@material-ui/types";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
+declare global {
+  interface Window {
+    stopMatrix: boolean;
+  }
+}
 interface HeroButtonProps {
   scale: number;
 }
@@ -32,6 +37,7 @@ export default function AdaptingStyledComponents(): JSX.Element {
   function handleClick() {
     consume(true);
     setTimeout(() => {
+      window.stopMatrix = true;
       history.push("/playground");
     }, 1000);
   }

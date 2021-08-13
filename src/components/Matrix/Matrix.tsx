@@ -4,11 +4,21 @@ import startRaining from "../../vendor/matrix";
 
 const Matrix: React.FunctionComponent = (): JSX.Element => {
   useEffect(() => {
-    startRaining();
+    window.stopMatrix = false;
+
+    const vw = Math.max(
+      document.documentElement.clientWidth || 0,
+      window.innerWidth || 0
+    );
+
+    const vh = Math.max(
+      document.documentElement.clientHeight || 0,
+      window.innerHeight || 0
+    );
+
+    startRaining(vw, vh);
   });
-  return (
-    <div className="Matrix" data-testid="Matrix" id="matrix-placeholder"></div>
-  );
+  return <canvas data-testid="Matrix" id="matrix"></canvas>;
 };
 
 export default Matrix;
