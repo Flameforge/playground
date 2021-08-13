@@ -18,5 +18,4 @@ const Hero: React.FunctionComponent = (): JSX.Element => (
     </div>
   </div>
 );
-
 export default Hero;

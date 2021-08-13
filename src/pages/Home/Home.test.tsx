@@ -8,7 +8,12 @@ describe("<Home />", () => {
     render(<Home />);
 
     const home = screen.getByTestId("Home");
-
     expect(home).toBeInTheDocument();
+
+    const hero = screen.getByTestId("Hero");
+    expect(hero).toBeInTheDocument();
+
+    const matrix = screen.getByTestId("Matrix");
+    expect(matrix).toBeInTheDocument();
   });
 });
