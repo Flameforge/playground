@@ -13,9 +13,16 @@
   p {
     color: dimgray;
     font: 14px Arial, sans-serif;
-      span {
-        display: inline-block;
-        transform: rotate(180deg) translateY(2px);
+
+    span {
+      display: inline-block;
+      transform: rotate(180deg) translateY(2px);
+    }
+
+    a {
+      &:not(:last-of-type) {
+        margin-left: 0.75rem;
       }
+    }
   }
 }
