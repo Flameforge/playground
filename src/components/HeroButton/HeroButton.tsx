@@ -29,6 +29,9 @@ const HeroButton = styled(
   left: "50%",
   transition: "transform 3s ease-in",
   borderRadius: "90px",
+  color: (props: HeroButtonProps) =>
+    `${props.scale > 1 ? "transparent" : "white"}`,
+  zIndex: 1,
 });
 
 export default function AdaptingStyledComponents(): JSX.Element {
@@ -40,14 +43,14 @@ export default function AdaptingStyledComponents(): JSX.Element {
     setTimeout(() => {
       window.stopMatrix = true;
       history.push("/playground");
-    }, 3001);
+    }, 500);
   }
 
   return (
     <HeroButton
       variant="contained"
       color="primary"
-      scale={!consumed ? 1 : 1500}
+      scale={!consumed ? 1 : 2000}
       data-testid="HeroButton"
       onClick={() => handleClick()}
     >
