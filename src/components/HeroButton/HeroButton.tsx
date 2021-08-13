@@ -27,7 +27,8 @@ const HeroButton = styled(
   position: "fixed",
   top: "45%",
   left: "50%",
-  transition: "transform 2s ease-in",
+  transition: "transform 3s ease-in",
+  borderRadius: "90px",
 });
 
 export default function AdaptingStyledComponents(): JSX.Element {
@@ -39,14 +40,14 @@ export default function AdaptingStyledComponents(): JSX.Element {
     setTimeout(() => {
       window.stopMatrix = true;
       history.push("/playground");
-    }, 1000);
+    }, 3001);
   }
 
   return (
     <HeroButton
       variant="contained"
       color="primary"
-      scale={!consumed ? 1 : 2500}
+      scale={!consumed ? 1 : 1500}
       data-testid="HeroButton"
       onClick={() => handleClick()}
     >
