@@ -15,4 +15,5 @@ ReactDOM.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 
 //TODO: Send to Analytics
-reportWebVitals(console.log);
+// reportWebVitals(console.log);
+reportWebVitals();
