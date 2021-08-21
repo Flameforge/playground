@@ -2,8 +2,17 @@
   background-color: #fe7678;
   background: linear-gradient(45deg, #fe6b8b, #ff8e53);
   background-size: 200% 200%;
-  min-height: 100vh;
   animation: Animation 5s ease infinite;
+
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+
+  text-align: center;
 
   @keyframes Animation {
     0% {

@@ -1,10 +1,10 @@
-import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import Hero from "./Hero";
+import { render, screen } from "@testing-library/react";
+import HeroCat from "./HeroCat";
 
 describe("<Hero />", () => {
   test("it should mount", () => {
-    render(<Hero />);
+    render(<HeroCat />);
     const hero = screen.getByTestId("Hero");
     expect(hero).toBeInTheDocument();
   });

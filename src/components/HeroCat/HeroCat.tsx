@@ -1,7 +1,7 @@
 import React from "react";
-import "./Hero.scss";
+import "./HeroCat.scss";
 
-const Hero: React.FunctionComponent = (): JSX.Element => (
+const HeroCat: React.FunctionComponent = (): JSX.Element => (
   <div data-testid="Hero" id="hero-unit">
     <div className="cat">
       <div className="ear ear--left"></div>
@@ -18,4 +18,4 @@ const Hero: React.FunctionComponent = (): JSX.Element => (
     </div>
   </div>
 );
-export default Hero;
+export default HeroCat;

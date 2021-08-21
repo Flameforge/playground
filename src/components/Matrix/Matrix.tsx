@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import "./Matrix.scss";
 import startRaining from "../../vendor/matrix";
+import "./Matrix.scss";
 
 const Matrix: React.FunctionComponent = (): JSX.Element => {
   useEffect(() => {
