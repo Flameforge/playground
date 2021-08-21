@@ -1,4 +1,3 @@
-import React from "react";
 import "./Privacy.scss";
 
 const Privacy = (): JSX.Element => (

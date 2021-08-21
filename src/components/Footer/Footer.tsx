@@ -9,7 +9,12 @@ const Footer = (): JSX.Element => (
       <Link href="/privacy" variant="body2" color="inherit">
         Privacy Policy
       </Link>
-      <a></a>
+      <Link href="/terms" variant="body2" color="inherit">
+        Terms of Use
+      </Link>
+      <Link href="mailto:flameforge@gmail.com" variant="body2" color="inherit">
+        Contact
+      </Link>
     </Typography>
   </footer>
 );
