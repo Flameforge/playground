@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import Playground from "./pages/Playground/Playground";
 import Privacy from "./pages/Privacy/Privacy";
 import Terms from "./pages/Terms/Terms";
+import Typography from "./pages/Typography/Typography";
 import theme from "./styles/Theme";
 import nyan from "./vendor/nyan";
 
@@ -25,6 +26,9 @@ const App: React.FunctionComponent = (): JSX.Element => {
             <Route path="/playground">
               <Playground />
             </Route>
+            <Route path="/typography">
+              <Typography />
+            </Route>
             <Route path="/privacy">
               <Privacy />
             </Route>
@@ -42,3 +46,5 @@ const App: React.FunctionComponent = (): JSX.Element => {
 };
 
 export default App;
+
+// Todo catch route errors

@@ -25,3 +25,8 @@ A little sandbox to play with new technologies and general problems.
 * Matrix Rain
 * Nyan cat animated favicon (not for Safari)
 * CSS only cat animation
+
+Type font study
+<https://www.smashingmagazine.com/2018/06/reference-guide-typography-mobile-web-design/>
+
+// TODO SCSS single quotes

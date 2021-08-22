@@ -1,18 +1,10 @@
-@import "normalize";
+@import "_normalize.css";
 @import "fonts";
-
-html {
-  font-size: 16px;
-}
 
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .App {
   line-height: 0;
 }
-
-// TODO SCSS single quotes

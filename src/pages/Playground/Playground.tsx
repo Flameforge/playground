@@ -11,7 +11,8 @@ const Playground = (): JSX.Element => (
         Cat's Playground
       </Typography>
       <Typography variant="subtitle1" component="p">
-        Little web-dev playground to test cool stuff
+        A hidden little playground to share Cat content and some cool front-end
+        tech stuff
       </Typography>
     </Container>
 
