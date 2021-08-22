@@ -2,7 +2,7 @@ import React from "react";
 import "./HeroCat.scss";
 
 const HeroCat: React.FunctionComponent = (): JSX.Element => (
-  <div data-testid="Hero" id="hero-unit">
+  <div data-testid="HeroCat" id="hero-unit">
     <div className="cat">
       <div className="ear ear--left"></div>
       <div className="ear ear--right"></div>

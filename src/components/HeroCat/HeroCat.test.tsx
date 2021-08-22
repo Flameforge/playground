@@ -5,7 +5,7 @@ import HeroCat from "./HeroCat";
 describe("<Hero />", () => {
   test("it should mount", () => {
     render(<HeroCat />);
-    const hero = screen.getByTestId("Hero");
+    const hero = screen.getByTestId("HeroCat");
     expect(hero).toBeInTheDocument();
   });
 });

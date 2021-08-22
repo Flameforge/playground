@@ -1,8 +1,8 @@
-import { Link, Typography } from "@material-ui/core";
+import { Container, Link, Typography } from "@material-ui/core";
 import "./Footer.scss";
 
 const Footer = (): JSX.Element => (
-  <footer data-testid="Footer">
+  <Container data-testid="Footer" component="footer">
     <Typography variant="body1" component="p">
       <span>©</span> 2021 Cat's Playground
       <Link href="/privacy" variant="body2">
@@ -15,7 +15,7 @@ const Footer = (): JSX.Element => (
         ✉️ Contact
       </Link>
     </Typography>
-  </footer>
+  </Container>
 );
 
 export default Footer;

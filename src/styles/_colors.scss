@@ -1,4 +1,36 @@
-$black: #000;
-$gray: #2b2d2f;
-$red: #ff0000;
-$white: #fff;
+$meow: #001220, #c62368, #6c8cfe, #fedf6c, #6cfedf, #fe6b8b, white;
+
+$white: nth(
+  $list: $meow,
+  $n: 7,
+);
+
+$black: nth(
+  $list: $meow,
+  $n: 1,
+);
+
+$red: nth(
+  $list: $meow,
+  $n: 2,
+);
+
+$orange: nth(
+  $list: $meow,
+  $n: 3,
+);
+
+$yellow: nth(
+  $list: $meow,
+  $n: 4,
+);
+
+$green: nth(
+  $list: $meow,
+  $n: 5,
+);
+
+$blue: nth(
+  $list: $meow,
+  $n: 6,
+);

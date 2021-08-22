@@ -9,6 +9,12 @@ import Terms from "./pages/Terms/Terms";
 import theme from "./styles/Theme";
 import nyan from "./vendor/nyan";
 
+declare global {
+  interface Window {
+    stopMatrix: boolean;
+  }
+}
+
 const App: React.FunctionComponent = (): JSX.Element => {
   return (
     <ThemeProvider theme={theme}>

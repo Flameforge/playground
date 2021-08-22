@@ -1,0 +1,36 @@
+@use "colors" as colors;
+
+@import "mixins";
+
+@mixin BackgroundLinearRoller($degree, $color1, $color2) {
+  animation: Animation 3s ease infinite;
+  background: linear-gradient($degree, $color1, $color2);
+  //   background: linear-gradient(45deg, #fe6b8b, #ff8e53);
+  background-size: 200% 200%;
+
+  @include keyframes(Animation) {
+    0% {
+      background-position: 10% 0%;
+    }
+    50% {
+      background-position: 40% 100%;
+    }
+    100% {
+      background-position: 10% 0%;
+    }
+  }
+}
+
+@mixin TextFadeIn {
+  animation: blackRainbow ease 2s;
+
+  @keyframes blackRainbow {
+    from {
+      color: colors.$red;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}

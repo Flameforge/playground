@@ -7,6 +7,15 @@
   },
   "eslint.alwaysShowStatus": true,
   "css.lint.unknownAtRules": "ignore",
-  "cSpell.words": ["TTFB", "beautiness", "browserslist", "nyan", "testid"],
+  "cSpell.words": [
+    "Heikei",
+    "TTFB",
+    "beautiness",
+    "browserslist",
+    "haikei",
+    "mixins",
+    "nyan",
+    "testid"
+  ],
   "jest.jestCommandLine": "yarn test"
 }

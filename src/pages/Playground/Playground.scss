@@ -1,28 +1,47 @@
-.Playground {
-  background-color: #fe7678;
-  background: linear-gradient(45deg, #fe6b8b, #ff8e53);
-  background-size: 200% 200%;
-  animation: Animation 5s ease infinite;
+@use "../../styles/colors" as colors;
+@import "../../styles/transitions";
 
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.Playground {
   overflow: auto;
 
-  text-align: center;
+  header,
+  section {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    min-height: 100vh;
 
-  @keyframes Animation {
-    0% {
-      background-position: 10% 0%;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      @include TextFadeIn();
+      text-align: center;
+      overflow-wrap: break-word;
     }
-    50% {
-      background-position: 40% 100%;
+  }
+
+  header {
+    position: relative;
+    @include BackgroundLinearRoller(45deg, #fe6b8b, #ff8e53);
+  }
+
+  img.Haikei {
+    width: 100%;
+    aspect-ratio: 960/540;
+  }
+
+  section {
+    @for $i from 1 through length(colors.$meow) {
+      &:nth-of-type(#{$i}) {
+        background: nth(colors.$meow, $i);
+      }
     }
-    100% {
-      background-position: 10% 0%;
+
+    &.dark {
+      color: colors.$white;
     }
   }
 }

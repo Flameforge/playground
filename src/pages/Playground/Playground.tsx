@@ -1,19 +1,23 @@
-import { Typography } from "@material-ui/core";
+import { Container, Typography } from "@material-ui/core";
+import FirstHaikei from "./layered-waves-haikei-1-2.svg";
+import SecondHaikei from "./layered-waves-haikei-2-3.svg";
+import ThirdHaikei from "./layered-waves-haikei-3-4.svg";
 import "./Playground.scss";
 
 const Playground = (): JSX.Element => (
-  <div className="Playground" data-testid="Playground">
-    <header>
+  <div className="Playground" data-testid="PlayGround">
+    <Container component="header" maxWidth={false}>
       <Typography variant="h1" component="h1">
-        Playground
+        Cat's Playground
       </Typography>
       <Typography variant="subtitle1" component="p">
         Little web-dev playground to test cool stuff
       </Typography>
-    </header>
-    <section>
+    </Container>
+
+    <Container className="dark" component="section" maxWidth={false}>
       <Typography variant="h2" component="h2">
-        Matrix Rain
+        Matrix rain js background
       </Typography>
       <Typography variant="subtitle1" component="p">
         The Matrix Rain like background animation made with js and canvas
@@ -21,24 +25,33 @@ const Playground = (): JSX.Element => (
       <Typography variant="subtitle1" component="p">
         Custom adaptation of the meow's code that you can find here:
       </Typography>
-    </section>
-    <section>
+    </Container>
+
+    <img src={FirstHaikei} className="Haikei" />
+
+    <Container component="section" maxWidth={false}>
       <Typography variant="h2" component="h2">
         CSS only Cat animation
       </Typography>
       <Typography variant="subtitle1" component="p">
         Copy pasta of meow's simple little character. I found this one here.
       </Typography>
-    </section>
-    <section>
+    </Container>
+
+    <img src={SecondHaikei} className="Haikei" />
+
+    <Container component="section" maxWidth={false}>
       <Typography variant="h2" component="h2">
         Nyan Cat favicon
       </Typography>
       <Typography variant="subtitle1" component="p">
         Copy pasta of meow's simple little character. I found this one here.
       </Typography>
-    </section>
-    <section>
+    </Container>
+
+    <img src={ThirdHaikei} className="Haikei" />
+
+    <Container component="section" maxWidth={false}>
       <Typography variant="h2" component="h2">
         Framework
       </Typography>
@@ -75,7 +88,13 @@ const Playground = (): JSX.Element => (
       <Typography variant="body1" component="p">
         Font size technique
       </Typography>
-    </section>
+      <Typography variant="body1" component="p">
+        Heikei
+      </Typography>
+      <Typography variant="body1" component="p">
+        Glowing background
+      </Typography>
+    </Container>
   </div>
 );
 

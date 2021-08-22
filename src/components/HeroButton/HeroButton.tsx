@@ -4,11 +4,6 @@ import { Omit } from "@material-ui/types";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
-declare global {
-  interface Window {
-    stopMatrix: boolean;
-  }
-}
 interface HeroButtonProps {
   scale: number;
 }
@@ -32,6 +27,7 @@ const HeroButton = styled(
   color: (props: HeroButtonProps) =>
     `${props.scale > 1 ? "transparent" : "white"}`,
   zIndex: 1,
+  whiteSpace: "nowrap",
 });
 
 export default function AdaptingStyledComponents(): JSX.Element {
@@ -54,7 +50,7 @@ export default function AdaptingStyledComponents(): JSX.Element {
       data-testid="HeroButton"
       onClick={() => handleClick()}
     >
-      Enter the playground!
+      Enter the playground
     </HeroButton>
   );
 }
