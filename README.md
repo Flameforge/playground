@@ -30,3 +30,5 @@ Type font study
 <https://www.smashingmagazine.com/2018/06/reference-guide-typography-mobile-web-design/>
 
 // TODO SCSS single quotes
+
+<https://www.youtube.com/watch?v=lPJVi797Uy0&ab_channel=Fireship>

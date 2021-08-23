@@ -96,6 +96,15 @@ const Playground = (): JSX.Element => (
         Glowing background
       </Typography>
     </Container>
+
+    <Container component="section" maxWidth={false}>
+      <Typography variant="h2" component="h2">
+        Merchandise
+      </Typography>
+      <Typography variant="subtitle1" component="p">
+        I like it, thus I promote it.
+      </Typography>
+    </Container>
   </div>
 );
 
