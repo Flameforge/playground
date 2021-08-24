@@ -1,33 +1,35 @@
 @use "../../styles/colors" as colors;
+@import "sass-rem";
 
 @mixin copyleft {
   display: inline-block;
   transform: scale(-1, 1);
-  color: colors.$red;
 }
 
 #root footer {
   bottom: 0;
-  position: fixed;
   width: 100%;
   padding: 1rem;
   text-align: center;
 
   p {
-    color: rgba($color: colors.$blue, $alpha: 0.6);
-    font-size: 14px;
+    color: rgba($color: colors.$black, $alpha: 0.6);
+    font-size: rem(14px);
+    line-height: rem(24px);
 
     span {
       @include copyleft();
+      color: colors.$red;
     }
 
     a {
-      color: rgba($color: colors.$blue, $alpha: 0.6);
-      margin-left: 0.375rem;
-      margin-right: 0.375rem;
+      display: inline-block;
+      color: rgba($color: colors.$black, $alpha: 0.6);
+      margin-left: rem(6px);
+      margin-right: rem(6px);
 
       &:first-of-type {
-        margin-left: 0.75rem;
+        margin-left: rem(12px);
       }
     }
   }

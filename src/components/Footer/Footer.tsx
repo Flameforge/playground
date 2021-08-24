@@ -12,7 +12,7 @@ const Footer = (): JSX.Element => (
         Terms of Use
       </Link>
       <Link href="mailto:flameforge@gmail.com" variant="body2">
-        ✉️ Contact
+        Contact
       </Link>
     </Typography>
   </Container>
