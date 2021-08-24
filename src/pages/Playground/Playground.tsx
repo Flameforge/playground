@@ -1,4 +1,5 @@
 import { Container, Typography } from "@material-ui/core";
+import Footer from "../../components/Footer/Footer";
 import FirstHaikei from "./layered-waves-haikei-1-2.svg";
 import SecondHaikei from "./layered-waves-haikei-2-3.svg";
 import ThirdHaikei from "./layered-waves-haikei-3-4.svg";
@@ -105,6 +106,8 @@ const Playground = (): JSX.Element => (
         I like it, thus I promote it.
       </Typography>
     </Container>
+
+    <Footer />
   </div>
 );
 
