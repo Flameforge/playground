@@ -2,6 +2,7 @@ import { ThemeProvider } from "@material-ui/styles";
 import React from "react";
 import Favicon from "react-favicon";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ScrollTop from "./components/ScrollTop/ScrollTop";
 import Home from "./pages/Home/Home";
 import Playground from "./pages/Playground/Playground";
 import Privacy from "./pages/Privacy/Privacy";
@@ -21,6 +22,7 @@ const App: React.FunctionComponent = (): JSX.Element => {
     <ThemeProvider theme={theme}>
       <main className="App" data-testid="App">
         <Favicon url={nyan} />
+        <ScrollTop />
         <Router>
           <Switch>
             <Route path="/playground">
