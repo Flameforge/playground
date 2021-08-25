@@ -1,4 +1,5 @@
 import { Container, Typography } from "@material-ui/core";
+import FeatureCards from "../../components/FeatureCards/FeatureCards";
 import Footer from "../../components/Footer/Footer";
 import FirstHaikei from "./layered-waves-haikei-1-2.svg";
 import SecondHaikei from "./layered-waves-haikei-2-3.svg";
@@ -15,6 +16,7 @@ const Playground = (): JSX.Element => (
         A hidden little playground to share Cat content and some cool front-end
         tech stuff
       </Typography>
+      <FeatureCards />
     </Container>
 
     <Container className="dark" component="section" maxWidth={false}>
