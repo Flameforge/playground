@@ -32,3 +32,16 @@ Type font study
 // TODO SCSS single quotes
 
 <https://www.youtube.com/watch?v=lPJVi797Uy0&ab_channel=Fireship>
+
+<https://gist.github.com/seyoum/72b4aafbacc10df28e2d22c7fd2d07e6>
+
+<https://www.youtube.com/watch?v=RmDh3m8b9cU>
+external link identi
+
+<https://npm.io/package/type-presets>
+
+<https://medium.com/design-ibm/a-deep-dive-on-typescales-16c7b1473d83>
+<https://webdesign.tutsplus.com/courses/a-beginners-guide-to-using-typographic-scales/lessons/what-is-a-typographic-scale>
+Semantic-UI-React.
+
+link aria-current="page"

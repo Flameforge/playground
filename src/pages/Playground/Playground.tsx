@@ -12,7 +12,7 @@ const Playground = (): JSX.Element => (
       <Typography variant="h1" component="h1">
         Cat's Playground
       </Typography>
-      <Typography variant="subtitle1" component="p">
+      <Typography variant="subtitle1" component="p" paragraph>
         A hidden little playground to share Cat content and some cool front-end
         tech stuff
       </Typography>
@@ -23,10 +23,10 @@ const Playground = (): JSX.Element => (
       <Typography variant="h2" component="h2">
         Matrix rain js background
       </Typography>
-      <Typography variant="subtitle1" component="p">
+      <Typography variant="subtitle1" component="p" paragraph>
         The Matrix Rain like background animation made with js and canvas
       </Typography>
-      <Typography variant="subtitle1" component="p">
+      <Typography variant="subtitle1" component="p" paragraph>
         Custom adaptation of the meow's code that you can find here:
       </Typography>
     </Container>
@@ -37,7 +37,7 @@ const Playground = (): JSX.Element => (
       <Typography variant="h2" component="h2">
         CSS only Cat animation
       </Typography>
-      <Typography variant="subtitle1" component="p">
+      <Typography variant="subtitle1" component="p" paragraph>
         Copy pasta of meow's simple little character. I found this one here.
       </Typography>
     </Container>
@@ -48,7 +48,7 @@ const Playground = (): JSX.Element => (
       <Typography variant="h2" component="h2">
         Nyan Cat favicon
       </Typography>
-      <Typography variant="subtitle1" component="p">
+      <Typography variant="subtitle1" component="p" paragraph>
         Copy pasta of meow's simple little character. I found this one here.
       </Typography>
     </Container>

@@ -5,6 +5,7 @@ import {
   CardContent,
   Container,
   Grid,
+  Link,
   makeStyles,
   Typography,
 } from "@material-ui/core";
@@ -16,11 +17,6 @@ const useStyles = makeStyles({
   },
   title: {
     marginTop: 50,
-  },
-  bullet: {
-    display: "inline-block",
-    margin: "0 2px",
-    transform: "scale(0.8)",
   },
   cardTitle: {
     fontSize: 14,
@@ -35,7 +31,6 @@ const useStyles = makeStyles({
 
 const FeatureCards = (): JSX.Element => {
   const classes = useStyles();
-  const bull = <span className={classes.bullet}>•</span>;
   return (
     <Container component="main" maxWidth={false}>
       <Typography variant="h4" component="h3" className={classes.title}>
@@ -60,13 +55,13 @@ const FeatureCards = (): JSX.Element => {
                 color="textSecondary"
                 gutterBottom
               >
-                Word of the Day
+                Fluid design
               </Typography>
               <Typography variant="h5" component="h2">
-                be{bull}nev{bull}o{bull}lent
+                Typographic Scale
               </Typography>
               <Typography className={classes.pos} color="textSecondary">
-                adjective
+                Font system
               </Typography>
               <Typography variant="body2" component="p">
                 well meaning and kindly.
@@ -75,7 +70,9 @@ const FeatureCards = (): JSX.Element => {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small">Learn More</Button>
+              <Link href="/typography-scales" underline="none" target="_self">
+                <Button size="small">Learn More</Button>
+              </Link>
             </CardActions>
           </Card>
         </Grid>

@@ -7,7 +7,7 @@ import Home from "./pages/Home/Home";
 import Playground from "./pages/Playground/Playground";
 import Privacy from "./pages/Privacy/Privacy";
 import Terms from "./pages/Terms/Terms";
-import Typography from "./pages/Typography/Typography";
+import TypographicScale from "./pages/TypographicScale/TypographicScale";
 import theme from "./styles/Theme";
 import nyan from "./vendor/nyan";
 
@@ -20,7 +20,7 @@ declare global {
 const App: React.FunctionComponent = (): JSX.Element => {
   return (
     <ThemeProvider theme={theme}>
-      <main className="App" data-testid="App">
+      <div className="App" data-testid="App">
         <Favicon url={nyan} />
         <ScrollTop />
         <Router>
@@ -28,8 +28,8 @@ const App: React.FunctionComponent = (): JSX.Element => {
             <Route path="/playground">
               <Playground />
             </Route>
-            <Route path="/typography">
-              <Typography />
+            <Route path="/typography-scales">
+              <TypographicScale />
             </Route>
             <Route path="/privacy">
               <Privacy />
@@ -42,7 +42,7 @@ const App: React.FunctionComponent = (): JSX.Element => {
             </Route>
           </Switch>
         </Router>
-      </main>
+      </div>
     </ThemeProvider>
   );
 };

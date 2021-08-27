@@ -1,2 +1,11 @@
+@use "sass:map";
+
+$ratios: (
+  "golden": 1.618rem,
+  "perfect-fifth": 1.5rem,
+  "augmented-fourth": 1.414rem,
+  "major-third": 1.25rem,
+);
+
 $color-black: #161616;
 $color-white: #fff;
